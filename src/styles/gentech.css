@@ -1,0 +1,214 @@
+/* =========================================================
+   Gen Tech + — Colors & Type
+   Inspired by Voiceflow's editorial-meets-platform aesthetic.
+   Light cream surfaces, deep ink type, electric blue accent,
+   warm orange tag color, and a generous serif display.
+   ========================================================= */
+
+/* ---------- Fonts ----------
+   Display: "Spectral" (Google Fonts) — high-contrast transitional
+            serif standing in for Voiceflow's custom display serif.
+            FLAGGED SUBSTITUTION — please send the production .ttf/.woff2
+            if Gen Tech + has a licensed display family.
+   Body:    "Inter" — kept from the current Anyflow site for continuity.
+   Mono:    "JetBrains Mono" — used for code, log lines, IDs, timestamps.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* ---------- Brand color tokens ---------- */
+
+  /* Surfaces */
+  --gt-bg:            #F4F2EE;   /* warm cream — primary page background */
+  --gt-bg-soft:       #ECE9E2;   /* slightly deeper cream — section break */
+  --gt-bg-card:       #FFFFFF;   /* pure white card */
+  --gt-bg-mute:       #E8E5DE;   /* muted token row / divider strip */
+  --gt-ink:           #0E0F11;   /* near-black ink for headlines */
+  --gt-ink-2:         #1A1B1E;   /* dark surface (security, footer) */
+  --gt-ink-3:         #2A2B2F;   /* dark card on dark surface */
+
+  /* Type colors */
+  --gt-fg-1:          #0E0F11;   /* primary text */
+  --gt-fg-2:          #3D3E42;   /* body / paragraph */
+  --gt-fg-3:          #4B5563;   /* muted / supporting - WCAG AA passing */
+  --gt-fg-4:          #52525B;   /* very muted / metadata */
+  --gt-fg-on-dark:    #F4F2EE;   /* primary on dark */
+  --gt-fg-on-dark-2:  #B7B8BC;   /* muted on dark */
+
+  /* Accents */
+  --gt-blue:          #2D6BF5;   /* electric blue — primary CTA */
+  --gt-blue-hover:    #1F58D8;
+  --gt-blue-soft:     #EAF0FE;   /* tinted background for blue chips */
+  --gt-orange:        #C0392B;   /* warm tag / category color */
+  --gt-orange-soft:   #FDECE7;
+  --gt-green:         #2FA85C;   /* success / metric green */
+  --gt-red:           #D7392B;   /* destructive */
+  --gt-amber:         #E8A93B;   /* warning / debug log */
+
+  /* Semantic */
+  --gt-border:        #DCD9D2;   /* warm hairline */
+  --gt-border-2:      #C9C6BE;   /* slightly stronger */
+  --gt-border-dark:   #2C2D31;   /* hairline on dark surface */
+  --gt-ring:          rgba(45,107,245,0.35);
+
+  /* Shadow system */
+  --gt-shadow-xs:     0 1px 1px rgba(14,15,17,0.04);
+  --gt-shadow-sm:     0 1px 2px rgba(14,15,17,0.06), 0 1px 1px rgba(14,15,17,0.04);
+  --gt-shadow-md:     0 4px 14px rgba(14,15,17,0.08), 0 1px 2px rgba(14,15,17,0.04);
+  --gt-shadow-lg:     0 18px 40px rgba(14,15,17,0.12), 0 2px 6px rgba(14,15,17,0.05);
+  --gt-shadow-pill:   0 6px 22px rgba(14,15,17,0.10);
+
+  /* Radius scale (Voiceflow uses generous rounding on pills, modest on cards) */
+  --gt-radius-xs:     4px;
+  --gt-radius-sm:     8px;
+  --gt-radius-md:     12px;
+  --gt-radius-lg:     20px;
+  --gt-radius-xl:     28px;
+  --gt-radius-pill:   9999px;
+
+  /* Spacing scale (4px base) */
+  --gt-space-1:       4px;
+  --gt-space-2:       8px;
+  --gt-space-3:       12px;
+  --gt-space-4:       16px;
+  --gt-space-5:       20px;
+  --gt-space-6:       24px;
+  --gt-space-8:       32px;
+  --gt-space-10:      40px;
+  --gt-space-12:      48px;
+  --gt-space-16:      64px;
+  --gt-space-20:      80px;
+  --gt-space-24:      96px;
+  --gt-space-32:      128px;
+
+  /* Type families */
+  --gt-font-display:  'Spectral', 'Source Serif Pro', Georgia, serif;
+  --gt-font-body:     'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --gt-font-mono:     'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Easing */
+  --gt-ease:          cubic-bezier(.2,.7,.2,1);
+  --gt-ease-out:      cubic-bezier(.16,1,.3,1);
+  --gt-dur-fast:      150ms;
+  --gt-dur-base:      240ms;
+  --gt-dur-slow:      420ms;
+}
+
+/* ============================================================
+   Semantic typography — apply by class so cards, slides, kits,
+   and ad-hoc HTML can opt into a consistent voice.
+   ============================================================ */
+
+.gt-display-xl,
+.gt-display-lg,
+.gt-display-md,
+.gt-display-sm {
+  font-family: var(--gt-font-display);
+  font-weight: 400;            /* the look is light + large, not heavy */
+  letter-spacing: -0.015em;
+  color: var(--gt-fg-1);
+  line-height: 1.04;
+  text-wrap: pretty;
+}
+
+.gt-display-xl { font-size: clamp(56px, 7vw, 104px); line-height: 1.02; }
+.gt-display-lg { font-size: clamp(44px, 5.4vw, 80px); }
+.gt-display-md { font-size: clamp(34px, 3.6vw, 56px); line-height: 1.08; }
+.gt-display-sm { font-size: clamp(26px, 2.4vw, 36px); line-height: 1.12; }
+
+/* H-roles */
+.gt-h1 { font-family: var(--gt-font-display); font-weight: 400; font-size: 64px; line-height: 1.05; letter-spacing: -0.015em; color: var(--gt-fg-1); }
+.gt-h2 { font-family: var(--gt-font-display); font-weight: 400; font-size: 44px; line-height: 1.08; letter-spacing: -0.01em;  color: var(--gt-fg-1); }
+.gt-h3 { font-family: var(--gt-font-display); font-weight: 400; font-size: 30px; line-height: 1.15; letter-spacing: -0.005em; color: var(--gt-fg-1); }
+.gt-h4 { font-family: var(--gt-font-body);    font-weight: 600; font-size: 18px; line-height: 1.3;  letter-spacing: -0.005em; color: var(--gt-fg-1); }
+
+/* Body */
+.gt-body-lg { font-family: var(--gt-font-body); font-weight: 400; font-size: 18px; line-height: 1.5; color: var(--gt-fg-2); }
+.gt-body    { font-family: var(--gt-font-body); font-weight: 400; font-size: 16px; line-height: 1.55; color: var(--gt-fg-2); }
+.gt-body-sm { font-family: var(--gt-font-body); font-weight: 400; font-size: 14px; line-height: 1.5;  color: var(--gt-fg-3); }
+.gt-caption { font-family: var(--gt-font-body); font-weight: 500; font-size: 12px; line-height: 1.4;  color: var(--gt-fg-3); letter-spacing: 0.01em; }
+
+/* Tag / eyebrow — a Voiceflow signature: small, orange, often above an h2 */
+.gt-eyebrow {
+  font-family: var(--gt-font-body);
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  color: var(--gt-orange);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.gt-eyebrow::before {
+  content: "";
+  width: 5px; height: 5px;
+  background: var(--gt-orange);
+  border-radius: 50%;
+}
+
+/* Mono — code, logs, numbers */
+.gt-mono     { font-family: var(--gt-font-mono); font-size: 13px; color: var(--gt-fg-2); }
+.gt-mono-sm  { font-family: var(--gt-font-mono); font-size: 11px; color: var(--gt-fg-3); }
+
+/* Big metric — the "500ms / 300k / 10K+" treatment */
+.gt-metric {
+  font-family: var(--gt-font-display);
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1;
+  letter-spacing: -0.015em;
+  color: var(--gt-fg-1);
+}
+.gt-metric-label {
+  font-family: var(--gt-font-body);
+  font-size: 13px;
+  color: var(--gt-fg-3);
+  margin-top: 6px;
+}
+
+/* Link */
+.gt-link {
+  color: var(--gt-blue);
+  text-decoration: none;
+  transition: color var(--gt-dur-fast) var(--gt-ease);
+}
+.gt-link:hover { color: var(--gt-blue-hover); text-decoration: underline; text-underline-offset: 3px; }
+
+/* Helper: dark-on-dark variants */
+.gt-on-dark .gt-h1, .gt-on-dark .gt-h2, .gt-on-dark .gt-h3,
+.gt-on-dark .gt-display-xl, .gt-on-dark .gt-display-lg, .gt-on-dark .gt-display-md, .gt-on-dark .gt-display-sm { color: var(--gt-fg-on-dark); }
+.gt-on-dark .gt-body, .gt-on-dark .gt-body-lg, .gt-on-dark .gt-body-sm { color: var(--gt-fg-on-dark-2); }
+
+/* ============================================================
+   Buttons — the platform mixes pill CTAs and ghost outlines.
+   ============================================================ */
+.gt-btn {
+  font-family: var(--gt-font-body);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 22px;
+  border-radius: var(--gt-radius-pill);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background var(--gt-dur-fast) var(--gt-ease),
+              color var(--gt-dur-fast) var(--gt-ease),
+              transform var(--gt-dur-fast) var(--gt-ease),
+              border-color var(--gt-dur-fast) var(--gt-ease);
+}
+.gt-btn:active { transform: translateY(0.5px); }
+
+.gt-btn-primary { background: var(--gt-lime, #A3E635); color: var(--gt-ink); }
+.gt-btn-primary:hover { background: #BEF264; }
+
+.gt-btn-secondary { background: transparent; color: var(--gt-ink); border-color: var(--gt-ink); border-width: 2px; }
+.gt-btn-secondary:hover { background: var(--gt-ink); color: var(--gt-bg); border-color: var(--gt-ink); }
+
+.gt-btn-ghost { background: transparent; color: var(--gt-fg-1); }
+.gt-btn-ghost:hover { background: rgba(14,15,17,0.05); }
+
+.gt-btn-sm { padding: 9px 14px; font-size: 13px; }
+.gt-btn-lg { padding: 17px 28px; font-size: 16px; }
