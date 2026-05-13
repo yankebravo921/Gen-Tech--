@@ -13,11 +13,9 @@ export default function Websites() {
       <Hero content={WEBSITES_OFFER.hero} />
       <PainBeat />
       <FunnelDiagnostic 
-        data={WEBSITES_OFFER.diagnosticData} 
-        highlightStage={WEBSITES_OFFER.highlightStage}
-        diagnosisText={WEBSITES_OFFER.diagnosisText}
-        recoveryValue={WEBSITES_OFFER.recoveryValue}
-        badge={WEBSITES_OFFER.badge}
+        eyebrow="WHERE BOOKINGS BREAK"
+        headline="This is not a traffic problem."
+        body="People are getting stuck before they book."
       />
       <SolutionDetail content={WEBSITES_OFFER.solution} />
       <ThePromise />

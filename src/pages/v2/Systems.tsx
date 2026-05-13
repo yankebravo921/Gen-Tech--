@@ -13,11 +13,27 @@ export default function Systems() {
       <Hero content={SYSTEMS_OFFER.hero} />
       <PainBeat />
       <FunnelDiagnostic 
-        data={SYSTEMS_OFFER.diagnosticData} 
-        highlightStage={SYSTEMS_OFFER.highlightStage}
-        diagnosisText={SYSTEMS_OFFER.diagnosisText}
-        recoveryValue={SYSTEMS_OFFER.recoveryValue}
-        badge={SYSTEMS_OFFER.badge}
+        eyebrow="WHERE LEADS GO COLD"
+        headline="This is not a lead problem."
+        body="People ask for help, then wait too long to hear back."
+        readoutStats={[
+          "8,500 leads came in.",
+          "420 were contacted fast.",
+          "Only 85 booked."
+        ]}
+        readoutConclusion={[
+          "That is not a lead problem.",
+          "That is a follow-up problem."
+        ]}
+        flowSteps={[
+          "Lead came in",
+          "Waited too long",
+          "Went cold",
+          "Few booked"
+        ]}
+        problemFound="People ask for help, then wait too long before anyone follows up."
+        fixFirst="The first response, the 5-minute follow-up window, and the sequence after touch one."
+        moneyLeft="$312k / month"
       />
       <SolutionDetail content={SYSTEMS_OFFER.solution} />
       <ThePromise />
