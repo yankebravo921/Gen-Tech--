@@ -14,8 +14,8 @@ export default function Websites() {
       <PainBeat />
       <FunnelDiagnostic 
         eyebrow="WHERE BOOKINGS BREAK"
-        headline="This is not a traffic problem."
-        body="People are getting stuck before they book."
+        headline="People are getting stuck before they book."
+        ctaStripText="Fix the booking experience. Recover hidden revenue."
       />
       <SolutionDetail content={WEBSITES_OFFER.solution} />
       <ThePromise />

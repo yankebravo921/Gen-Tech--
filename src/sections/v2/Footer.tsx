@@ -1,24 +1,107 @@
-import { Link } from 'react-router-dom'
-import { FOOTER } from '@/lib/content'
+import { lazy, Suspense } from 'react'
+import { Link, useLocation } from 'react-router-dom'
+import { FOOTER, NAV } from '@/lib/content'
+
+const MiniThreeDLogo = lazy(() => import('@/components/MiniThreeDLogo'))
 
 export default function Footer() {
+  const location = useLocation();
+  const isHomepage = location.pathname === '/';
+
   return (
-    <footer className="w-full bg-[#F5F1EA] pt-[64px] pb-[32px] md:pt-[96px] md:pb-[48px] px-6">
-      <div className="w-full max-w-7xl mx-auto flex flex-col">
-        
-        {/* Top Row: Mobile stacks to column, Desktop is 3 columns */}
-        <div className="flex flex-col md:flex-row gap-12 md:gap-24 mb-16 md:mb-24">
-          {FOOTER.columns.map((col, i) => (
-            <div key={i} className="flex flex-col gap-6">
-              <h3 className="font-sans text-[0.875rem] font-bold tracking-[0.1em] uppercase text-[#4B5563]">
-                {col.title}
+    <footer className="w-full bg-[#F5F1EA] px-6 pb-6 pt-12">
+      <div className="w-full max-w-7xl mx-auto">
+
+        {/* ── Dark Card ── */}
+        <div className="relative bg-[#0E0F11] rounded-[28px] overflow-hidden px-6 md:px-16 pt-20 pb-10">
+
+          {/* Subtle decorative arcs (CSS only) */}
+          <div className="absolute top-[30%] -left-[200px] w-[500px] h-[500px] rounded-full border border-[#1A1B1E] pointer-events-none" />
+          <div className="absolute top-[10%] -right-[180px] w-[460px] h-[460px] rounded-full border border-[#1A1B1E] pointer-events-none" />
+          <div className="absolute -bottom-[120px] left-[30%] w-[380px] h-[380px] rounded-full border border-[#1A1B1E] pointer-events-none" />
+
+          {/* ── Logo + Brand Center ── */}
+          <div className="flex flex-col items-center mb-14 relative z-10">
+            {/* Logo mark */}
+            <div className="w-20 h-20 mb-5 flex items-center justify-center">
+              {isHomepage ? (
+                <img src="/gentech-mark.svg" alt="Gentech Plus" className="h-12 w-auto brightness-0 invert" />
+              ) : (
+                <Suspense fallback={
+                  <img src="/gentech-mark.svg" alt="Gentech Plus" className="h-12 w-auto brightness-0 invert" />
+                }>
+                  <MiniThreeDLogo size={80} />
+                </Suspense>
+              )}
+            </div>
+            {/* Brand name */}
+            <h2 className="font-serif text-[2rem] md:text-[2.5rem] text-[#F5F1EA] leading-tight text-center">
+              {FOOTER.brand}
+            </h2>
+            {/* Tagline */}
+            <p className="font-serif italic text-base text-[#A1A1AA] mt-2 text-center max-w-md">
+              {FOOTER.tagline}
+            </p>
+
+            {/* Twin CTAs */}
+            <div className="flex flex-col sm:flex-row items-center gap-3 mt-8">
+              <Link
+                to="/book"
+                className="bg-[#A3E635] hover:bg-[#95D12A] active:bg-[#86CB14] text-[#0A0A0A] font-sans font-semibold text-sm px-6 py-2.5 rounded-full transition-colors inline-flex items-center gap-2"
+              >
+                Book the diagnostic
+                <span aria-hidden="true">→</span>
+              </Link>
+              <Link
+                to="/#funnel-diagnostic"
+                className="border border-[#A3E635] text-[#A3E635] hover:bg-[#A3E635]/10 font-sans font-semibold text-sm px-6 py-2.5 rounded-full transition-colors inline-flex items-center gap-2"
+              >
+                See a sample diagnostic
+                <span aria-hidden="true">→</span>
+              </Link>
+            </div>
+          </div>
+
+          {/* ── Three-Column Content ── */}
+          <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 border-t border-[#27272A] pt-10 mb-10">
+
+            {/* Contact */}
+            <div>
+              <h3 className="font-sans text-[11px] font-bold tracking-[0.2em] text-[#A1A1AA] uppercase mb-5">
+                Contact
               </h3>
-              <ul className="flex flex-col gap-4">
-                {col.links.map((link, j) => (
-                  <li key={j}>
+              <ul className="flex flex-col gap-3">
+                <li className="font-sans text-sm text-[#D1D5DB]">
+                  hello@gentechplus.com
+                </li>
+                <li className="font-sans text-sm text-[#D1D5DB]">
+                  Gentech Plus
+                </li>
+              </ul>
+              {/* Social links */}
+              <div className="flex items-center gap-5 mt-5">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-[#A1A1AA] hover:text-[#A3E635] transition-colors inline-flex items-center gap-1.5 text-sm font-sans">
+                  LinkedIn
+                  <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9L9 3M9 3H4M9 3V8"/></svg>
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-[#A1A1AA] hover:text-[#A3E635] transition-colors inline-flex items-center gap-1.5 text-sm font-sans">
+                  Instagram
+                  <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9L9 3M9 3H4M9 3V8"/></svg>
+                </a>
+              </div>
+            </div>
+
+            {/* Quick Links */}
+            <div>
+              <h3 className="font-sans text-[11px] font-bold tracking-[0.2em] text-[#A1A1AA] uppercase mb-5">
+                Quick links
+              </h3>
+              <ul className="flex flex-col gap-3">
+                {NAV.links.map((link, i) => (
+                  <li key={i}>
                     <Link
                       to={link.href}
-                      className="font-sans text-[1rem] text-[#0E0F11] hover:text-[#A3E635] transition-colors"
+                      className="font-sans text-sm text-[#D1D5DB] hover:text-[#A3E635] transition-colors"
                     >
                       {link.label}
                     </Link>
@@ -26,26 +109,45 @@ export default function Footer() {
                 ))}
               </ul>
             </div>
-          ))}
-        </div>
 
-        {/* Bottom Row */}
-        <div className="w-full border-t border-[#DCD9D2] pt-8 flex flex-col items-center md:flex-row md:items-center md:justify-between gap-6 md:gap-4">
-          
-          {/* Left: Logo Mark */}
-          <div className="flex-shrink-0">
-            <img src="/gentech-mark.svg" alt="Gentech Plus mark" className="h-[32px] w-auto" />
+            {/* Company */}
+            <div>
+              <h3 className="font-sans text-[11px] font-bold tracking-[0.2em] text-[#A1A1AA] uppercase mb-5">
+                Company
+              </h3>
+              <ul className="flex flex-col gap-3">
+                {FOOTER.columns
+                  .find(col => col.title === "COMPANY")
+                  ?.links.map((link, i) => (
+                  <li key={i}>
+                    <Link
+                      to={link.href}
+                      className="font-sans text-sm text-[#D1D5DB] hover:text-[#A3E635] transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
           </div>
 
-          {/* Center: Tagline */}
-          <p className="font-serif italic text-[1rem] md:text-[1.125rem] text-[#4B5563] text-center">
-            {FOOTER.tagline}
-          </p>
-
-          {/* Right: Copyright */}
-          <div className="font-sans text-[0.875rem] text-[#4B5563] text-center md:text-right">
-            © {new Date().getFullYear()} {FOOTER.brand}. All rights reserved.
+          {/* ── Bottom Legal Strip ── */}
+          <div className="relative z-10 border-t border-[#27272A] pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="flex items-center gap-6">
+              <Link to="/privacy" className="font-sans text-xs text-[#71717A] hover:text-[#A1A1AA] transition-colors">
+                Privacy policy
+              </Link>
+              <Link to="/terms" className="font-sans text-xs text-[#71717A] hover:text-[#A1A1AA] transition-colors">
+                Terms of service
+              </Link>
+            </div>
+            <p className="font-sans text-xs text-[#71717A]">
+              © {new Date().getFullYear()} {FOOTER.brand}
+            </p>
           </div>
+
         </div>
       </div>
     </footer>

@@ -14,8 +14,7 @@ export default function Systems() {
       <PainBeat />
       <FunnelDiagnostic 
         eyebrow="WHERE LEADS GO COLD"
-        headline="This is not a lead problem."
-        body="People ask for help, then wait too long to hear back."
+        headline="People ask for help, then wait too long to hear back."
         readoutStats={[
           "8,500 leads came in.",
           "420 were contacted fast.",
@@ -25,15 +24,10 @@ export default function Systems() {
           "That is not a lead problem.",
           "That is a follow-up problem."
         ]}
-        flowSteps={[
-          "Lead came in",
-          "Waited too long",
-          "Went cold",
-          "Few booked"
-        ]}
         problemFound="People ask for help, then wait too long before anyone follows up."
         fixFirst="The first response, the 5-minute follow-up window, and the sequence after touch one."
         moneyLeft="$312k / month"
+        ctaStripText="Fix the follow-up gap. Recover lost sales."
       />
       <SolutionDetail content={SYSTEMS_OFFER.solution} />
       <ThePromise />

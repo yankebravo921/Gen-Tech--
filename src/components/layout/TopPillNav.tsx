@@ -1,6 +1,8 @@
-import { useState } from 'react';
+import { useState, lazy, Suspense } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { NAV } from '@/lib/content';
+
+const MiniThreeDLogo = lazy(() => import('@/components/MiniThreeDLogo'));
 
 export default function TopPillNav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +26,13 @@ export default function TopPillNav() {
         <div className="flex items-center justify-between px-4 py-3 md:px-6">
           {/* Logo & Brand */}
           <Link to="/" className="flex items-center gap-2 flex-shrink-0" onClick={() => setIsOpen(false)}>
-            <img src="/gentech-mark.svg" alt="Gentech Plus" className="h-6 w-auto" />
+            {location.pathname === '/' ? (
+              <img src="/gentech-mark.svg" alt="Gentech Plus" className="h-8 w-auto" />
+            ) : (
+              <Suspense fallback={<img src="/gentech-mark.svg" alt="Gentech Plus" className="h-8 w-auto" />}>
+                <MiniThreeDLogo size={40} isStatic />
+              </Suspense>
+            )}
             <span className="font-bold text-[#0A0A0A] hidden sm:inline">{NAV.brand}</span>
           </Link>
 

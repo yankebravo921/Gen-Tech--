@@ -16,7 +16,23 @@ export default function Home() {
     <>
       <Hero />
       <PainBeat />
-      <FunnelDiagnostic />
+      <FunnelDiagnostic
+        eyebrow="WHERE THE MONEY SLIPS"
+        headline="You paid to bring people in. Then they disappear."
+        readoutStats={[
+          "24,180 people visited the site.",
+          "5,800 tried to take action.",
+          "Only 435 followed through."
+        ]}
+        readoutConclusion={[
+          "Most businesses do not need more traffic first.",
+          "They need to know where the people they already paid to reach are disappearing."
+        ]}
+        problemFound="People arrive, start to engage, then hit a wall — a slow step, a confusing form, a dead end nobody noticed."
+        fixFirst="The exact step where people stop. We find it in 30 minutes."
+        moneyLeft="$184k / month"
+        ctaStripText="Find the leak. Fix the step. Recover the revenue."
+      />
       <BrandMoment />
       <StatsGrid />
       <ThreePlaces />

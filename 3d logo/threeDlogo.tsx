@@ -140,14 +140,14 @@ function LogoShape({ url }: { url: string }) {
         }
     });
 
-    const extrudeSettings: THREE.ExtrudeGeometryOptions = {
+    const extrudeSettings: THREE.ExtrudeGeometryOptions = useMemo(() => ({
         depth: 45,
         bevelEnabled: true,
         bevelSegments: 12,
         steps: 3,
         bevelSize: 1.5,
         bevelThickness: 1.5,
-    };
+    }), []);
 
     return (
         <group ref={meshRef} scale={0.05} rotation={[0, 0, Math.PI]} position={[-10, 5, 0]}>
@@ -259,7 +259,7 @@ export default function ThreeDLogo() {
                 {/* Specular reflection light — creates a bright highlight sweep */}
                 <spotLight position={[30, 30, 80]} angle={0.5} penumbra={0.8} intensity={3} color="#ffffff" />
 
-                <Environment preset="city" />
+
 
                 <Suspense fallback={null}>
                     <Float speed={2} rotationIntensity={0.2} floatIntensity={0.2}>
