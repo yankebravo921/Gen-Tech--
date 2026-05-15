@@ -21,11 +21,11 @@ export default function Footer() {
           {/* ── Logo + Brand Center ── */}
           <div className="flex flex-col items-center mb-14 relative z-10">
             {/* Logo mark */}
-            <div className="w-20 h-20 mb-5 flex items-center justify-center">
+            <div className="w-32 h-32 mb-5 flex items-center justify-center">
               <Suspense fallback={
-                <img src="/gentech-mark.svg" alt="Gentech Plus" className="h-12 w-auto brightness-0 invert" />
+                <img src="/gentech-mark.svg" alt="Gentech Plus" className="h-16 w-auto brightness-0 invert" />
               }>
-                <MiniThreeDLogo size={80} />
+                <MiniThreeDLogo size={120} />
               </Suspense>
             </div>
             {/* Brand name */}

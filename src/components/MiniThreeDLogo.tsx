@@ -82,7 +82,7 @@ function MiniLogoShape({ url, isStatic = false }: { url: string; isStatic?: bool
     }), []);
 
     return (
-        <group ref={meshRef} scale={0.05} rotation={[0, 0, Math.PI]} position={[-10, 5, 0]}>
+        <group ref={meshRef} scale={0.05} rotation={[Math.PI, 0, 0]} position={[0, 0, 0]}>
             <Center>
                 {shapes.map((shape: THREE.Shape, i: number) => {
                     const geo = new THREE.ExtrudeGeometry(shape, extrudeSettings);
