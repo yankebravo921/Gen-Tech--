@@ -1,12 +1,10 @@
 import { lazy, Suspense } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { FOOTER, NAV } from '@/lib/content'
 
 const MiniThreeDLogo = lazy(() => import('@/components/MiniThreeDLogo'))
 
 export default function Footer() {
-  const location = useLocation();
-  const isHomepage = location.pathname === '/';
 
   return (
     <footer className="w-full bg-[#F5F1EA] px-6 pb-6 pt-12">
@@ -24,15 +22,11 @@ export default function Footer() {
           <div className="flex flex-col items-center mb-14 relative z-10">
             {/* Logo mark */}
             <div className="w-20 h-20 mb-5 flex items-center justify-center">
-              {isHomepage ? (
+              <Suspense fallback={
                 <img src="/gentech-mark.svg" alt="Gentech Plus" className="h-12 w-auto brightness-0 invert" />
-              ) : (
-                <Suspense fallback={
-                  <img src="/gentech-mark.svg" alt="Gentech Plus" className="h-12 w-auto brightness-0 invert" />
-                }>
-                  <MiniThreeDLogo size={80} />
-                </Suspense>
-              )}
+              }>
+                <MiniThreeDLogo size={80} />
+              </Suspense>
             </div>
             {/* Brand name */}
             <h2 className="font-serif text-[2rem] md:text-[2.5rem] text-[#F5F1EA] leading-tight text-center">
