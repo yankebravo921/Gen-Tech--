@@ -25,9 +25,14 @@ export default function TopPillNav() {
       <div className="bg-white rounded-full shadow-[0_4px_20px_rgba(0,0,0,0.08)] pointer-events-auto relative w-full max-w-5xl">
         <div className="flex items-center justify-between px-4 py-3 md:px-6">
           {/* Logo & Brand */}
-          <Link to="/" className="flex items-center gap-2 flex-shrink-0" onClick={() => setIsOpen(false)}>
-            <Suspense fallback={<img src="/gentech-mark.svg" alt="Gentech Plus" className="h-10 w-auto" />}>
-              <MiniThreeDLogo size={60} isStatic />
+          <Link 
+            to="/" 
+            className="flex items-center justify-center flex-shrink-0 w-[68px] h-[68px] ml-1 transition-transform hover:scale-105 active:scale-95" 
+            onClick={() => setIsOpen(false)}
+            aria-label="Gentech Plus Home"
+          >
+            <Suspense fallback={<img src="/gentech-mark.svg" alt="Gentech Plus" className="h-12 w-auto" />}>
+              <MiniThreeDLogo size={68} isStatic />
             </Suspense>
           </Link>
 
