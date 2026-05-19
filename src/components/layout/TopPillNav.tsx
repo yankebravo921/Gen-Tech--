@@ -29,7 +29,6 @@ export default function TopPillNav() {
             <Suspense fallback={<img src="/gentech-mark.svg" alt="Gentech Plus" className="h-10 w-auto" />}>
               <MiniThreeDLogo size={60} isStatic />
             </Suspense>
-            <span className="font-bold text-[#0A0A0A] hidden sm:inline">{NAV.brand}</span>
           </Link>
 
           {/* Desktop Links */}

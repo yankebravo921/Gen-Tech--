@@ -18,20 +18,16 @@ export default function Footer() {
           <div className="absolute top-[10%] -right-[180px] w-[460px] h-[460px] rounded-full border border-[#1A1B1E] pointer-events-none" />
           <div className="absolute -bottom-[120px] left-[30%] w-[380px] h-[380px] rounded-full border border-[#1A1B1E] pointer-events-none" />
 
-          {/* ── Logo + Brand Center ── */}
+          {/* ── Logo Center ── */}
           <div className="flex flex-col items-center mb-14 relative z-10">
             {/* Logo mark */}
-            <div className="w-32 h-32 mb-5 flex items-center justify-center">
+            <div className="w-48 h-48 mb-2 flex items-center justify-center">
               <Suspense fallback={
-                <img src="/gentech-mark.svg" alt="Gentech Plus" className="h-16 w-auto brightness-0 invert" />
+                <img src="/gentech-mark.svg" alt="Gentech Plus" className="h-24 w-auto brightness-0 invert" />
               }>
-                <MiniThreeDLogo size={120} />
+                <MiniThreeDLogo size={180} />
               </Suspense>
             </div>
-            {/* Brand name */}
-            <h2 className="font-serif text-[2rem] md:text-[2.5rem] text-[#F5F1EA] leading-tight text-center">
-              {FOOTER.brand}
-            </h2>
             {/* Tagline */}
             <p className="font-serif italic text-base text-[#A1A1AA] mt-2 text-center max-w-md">
               {FOOTER.tagline}
