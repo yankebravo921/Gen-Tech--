@@ -137,7 +137,7 @@ export default function MiniThreeDLogo({ size = 48, className = '', isStatic = f
         >
             <Canvas
                 dpr={[1, 2]}
-                camera={{ position: [0, 0, 160], fov: 40 }}
+                camera={{ position: [0, 0, 70], fov: 40 }}
                 gl={{ alpha: true, antialias: true, toneMapping: THREE.ACESFilmicToneMapping, preserveDrawingBuffer: true }}
                 style={{ pointerEvents: 'none' }}
             >
