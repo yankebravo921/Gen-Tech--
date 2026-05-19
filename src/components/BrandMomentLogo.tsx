@@ -244,7 +244,7 @@ export default function BrandMomentLogo() {
             }>
                 <Canvas
                     dpr={[1, 2]}
-                    camera={{ position: [0, 0, 35], fov: 50 }}
+                    camera={{ position: [0, 0, 70], fov: 50 }}
                     gl={{ alpha: true, antialias: true, toneMapping: THREE.ACESFilmicToneMapping }}
                 >
                     <ambientLight intensity={0.8} />
