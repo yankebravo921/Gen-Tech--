@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion'
 import { Eyebrow } from '@/components/anyflow/Atoms'
 import { THREE_PLACES } from '@/lib/content'
-import { MousePointer2, MessageCircle, Filter } from 'lucide-react'
+import { MousePointer2, MessageCircle, Filter, type LucideIcon } from 'lucide-react'
 
 // Map string icon names to explicit Lucide components as requested
-const iconMap: Record<string, React.FC<any>> = {
+const iconMap: Record<string, LucideIcon> = {
   cursor: MousePointer2,
   chat: MessageCircle,
   filter: Filter

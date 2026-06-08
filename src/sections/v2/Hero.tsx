@@ -1,7 +1,17 @@
 import { Eyebrow, Button, Icon, ScarcityCounter } from '@/components/anyflow/Atoms'
 import { HERO } from '@/lib/content'
 
-export default function Hero({ content = HERO }: { content?: any }) {
+interface HeroContent {
+  eyebrow?: string;
+  h1: Array<{ text: string; italic?: boolean }>;
+  body?: string;
+  subhead?: string;
+  primaryCta: { href: string; label?: string };
+  secondaryCta: { href: string; label: string };
+  trustLine: string;
+}
+
+export default function Hero({ content = HERO }: { content?: HeroContent }) {
   return (
     <section id="hero" className="relative w-full flex flex-col justify-center" style={{ background: 'var(--gt-bg)' }}>
       <div className="w-full max-w-7xl mx-auto px-6 py-12 md:py-16 md:pl-[120px] flex flex-col items-center md:items-start text-center md:text-left">
@@ -13,7 +23,7 @@ export default function Hero({ content = HERO }: { content?: any }) {
         )}
 
         <h1 className="font-serif text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.05] tracking-[-0.015em] text-[#0E0F11] max-w-[900px]">
-          {content.h1.map((span: any, i: number) => {
+          {content.h1.map((span: { text: string; italic?: boolean }, i: number) => {
             const isLastHomepage = content === HERO && i === 3;
             return (
               <span key={i} className={`block ${span.italic ? 'italic text-gray-600' : ''} ${isLastHomepage ? 'mt-1 md:mt-2' : ''}`}>
