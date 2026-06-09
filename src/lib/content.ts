@@ -9,7 +9,7 @@ export const HERO = {
   subhead: "Free 30-minute diagnostic. We map your funnel live with you, identify exactly where you're losing money, and send a written audit within 5 days. Pay nothing unless you want us to fix it.",
   primaryCta: { label: "Book the free diagnostic", href: "/book" },
   secondaryCta: { label: "See a sample audit", href: "#funnel-diagnostic" },
-  spotsBadge: "1 of 3 May spots left",
+  spotsBadge: "1 of 3 June spots left",
   trustLine: "Real audit. Real numbers. You walk away with actionable insight whether you hire us or not."
 };
 
@@ -22,7 +22,7 @@ export const PAIN_BEAT = {
 };
 
 export const ANNOUNCEMENT = {
-  text: "Booking the free Revenue Leak Diagnostic — 1 of 3 May spots left.",
+  text: "Booking the free Revenue Leak Diagnostic — 1 of 3 June spots left.",
   cta: { label: "Book now", href: "/book" }
 };
 
@@ -212,7 +212,7 @@ export const FINAL_CTA = {
   ],
   body: "Thirty minutes. We map your funnel live. You walk away with a written audit in five days. Pay nothing unless you want us to fix it.",
   cta: { label: "Book the free diagnostic →", href: "/book" },
-  spotsBadge: "1 of 3 May spots left"
+  spotsBadge: "1 of 3 June spots left"
 };
 
 export const FOOTER = {
@@ -314,7 +314,7 @@ export const WEBSITES_OFFER: OfferContent = {
     body: "You're getting traffic but losing them before they book. We map the exact drop-off points.",
     primaryCta: { label: "Book the free diagnostic", href: "/book" },
     secondaryCta: { label: "See a sample audit", href: "#funnel-diagnostic" },
-    badge: "1 of 3 May spots left",
+    badge: "1 of 3 June spots left",
     trustLine: "Real audit. Real numbers. You walk away with actionable insight whether you hire us or not."
   },
   diagnosticData: [
@@ -346,7 +346,7 @@ export const AI_AGENTS_OFFER: OfferContent = {
     body: "Customer support shouldn't be a cost center. We build AI that resolves tickets, instantly.",
     primaryCta: { label: "Book the free diagnostic", href: "/book" },
     secondaryCta: { label: "See a sample audit", href: "#funnel-diagnostic" },
-    badge: "1 of 3 May spots left",
+    badge: "1 of 3 June spots left",
     trustLine: "Real audit. Real numbers. You walk away with actionable insight whether you hire us or not."
   },
   diagnosticData: [
@@ -379,7 +379,7 @@ export const SYSTEMS_OFFER: OfferContent = {
     body: "You're spending to acquire leads, but dropping the ball on follow-up. We fix the plumbing.",
     primaryCta: { label: "Book the free diagnostic", href: "/book" },
     secondaryCta: { label: "See a sample audit", href: "#funnel-diagnostic" },
-    badge: "1 of 3 May spots left",
+    badge: "1 of 3 June spots left",
     trustLine: "Real audit. Real numbers. You walk away with actionable insight whether you hire us or not."
   },
   diagnosticData: [

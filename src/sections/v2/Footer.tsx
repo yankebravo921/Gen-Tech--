@@ -70,11 +70,11 @@ export default function Footer() {
               </ul>
               {/* Social links */}
               <div className="flex items-center gap-5 mt-5">
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-[#A1A1AA] hover:text-[#A3E635] transition-colors inline-flex items-center gap-1.5 text-sm font-sans">
+                <a href="https://www.linkedin.com/company/gentech-plus" target="_blank" rel="noopener noreferrer" className="text-[#A1A1AA] hover:text-[#A3E635] transition-colors inline-flex items-center gap-1.5 text-sm font-sans">
                   LinkedIn
                   <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9L9 3M9 3H4M9 3V8"/></svg>
                 </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-[#A1A1AA] hover:text-[#A3E635] transition-colors inline-flex items-center gap-1.5 text-sm font-sans">
+                <a href="https://www.instagram.com/gentechplus" target="_blank" rel="noopener noreferrer" className="text-[#A1A1AA] hover:text-[#A3E635] transition-colors inline-flex items-center gap-1.5 text-sm font-sans">
                   Instagram
                   <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9L9 3M9 3H4M9 3V8"/></svg>
                 </a>

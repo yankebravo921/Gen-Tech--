@@ -9,7 +9,7 @@ export default function Terms() {
         </h1>
         
         <div className="font-sans text-lg text-[#4B5563] leading-relaxed space-y-8">
-          <p className="text-sm text-[#52525B]">Last updated: May 2026</p>
+          <p className="text-sm text-[#52525B]">Last updated: June 2026</p>
           
           <p>
             These Terms of Service govern your use of the Gentech Plus website and services. By using this website, booking a diagnostic call, or communicating with us, you agree to these terms.
@@ -71,7 +71,7 @@ export default function Terms() {
             <p>For questions about these Terms, contact:</p>
             <p>
               Gentech Plus<br />
-              Email: <a href="mailto:team@gentechteam.com" className="text-[#0E0F11] underline decoration-[#DCD9D2] hover:decoration-[#FF4D2E] underline-offset-4 transition-colors">team@gentechteam.com</a>
+              Email: <a href="mailto:hello@gentechplus.com" className="text-[#0E0F11] underline decoration-[#DCD9D2] hover:decoration-[#FF4D2E] underline-offset-4 transition-colors">hello@gentechplus.com</a>
             </p>
           </section>
 

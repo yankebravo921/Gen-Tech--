@@ -54,7 +54,7 @@ export default function Hero({ content = HERO }: { content?: HeroContent }) {
         </div>
 
         <div className="mt-8 flex flex-col items-center md:items-start">
-          <ScarcityCounter remaining={1} total={3} month="May" />
+          <ScarcityCounter remaining={1} total={3} month="June" />
           <p className="mt-3 text-[13px] text-gray-600 max-w-[520px] leading-relaxed">
             {content.trustLine}
           </p>

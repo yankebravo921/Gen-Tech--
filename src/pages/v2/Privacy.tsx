@@ -9,7 +9,7 @@ export default function Privacy() {
         </h1>
         
         <div className="font-sans text-lg text-[#4B5563] leading-relaxed space-y-8">
-          <p className="text-sm text-[#52525B]">Last updated: May 2026</p>
+          <p className="text-sm text-[#52525B]">Last updated: June 2026</p>
           
           <p>
             Gentech Plus respects your privacy. This Privacy Policy explains how we collect, use, and protect information when you visit our website, book a diagnostic call, or contact us.
@@ -62,7 +62,7 @@ export default function Privacy() {
           <section className="space-y-4">
             <h2 className="font-serif text-2xl text-[#0E0F11]">6. Your rights</h2>
             <p>Depending on your location, you may have the right to request access to, correction of, or deletion of your personal information. You may also request that we stop contacting you.</p>
-            <p>To make a request, contact us at: <a href="mailto:gp.boutouil@gmail.com" className="text-[#0E0F11] underline decoration-[#DCD9D2] hover:decoration-[#FF4D2E] underline-offset-4 transition-colors">gp.boutouil@gmail.com</a></p>
+            <p>To make a request, contact us at: <a href="mailto:hello@gentechplus.com" className="text-[#0E0F11] underline decoration-[#DCD9D2] hover:decoration-[#FF4D2E] underline-offset-4 transition-colors">hello@gentechplus.com</a></p>
           </section>
 
           <section className="space-y-4">
@@ -85,7 +85,7 @@ export default function Privacy() {
             <p>For questions about this Privacy Policy, contact:</p>
             <p>
               Gentech Plus<br />
-              Email: <a href="mailto:gp.boutouil@gmail.com" className="text-[#0E0F11] underline decoration-[#DCD9D2] hover:decoration-[#FF4D2E] underline-offset-4 transition-colors">gp.boutouil@gmail.com</a>
+              Email: <a href="mailto:hello@gentechplus.com" className="text-[#0E0F11] underline decoration-[#DCD9D2] hover:decoration-[#FF4D2E] underline-offset-4 transition-colors">hello@gentechplus.com</a>
             </p>
           </section>
 

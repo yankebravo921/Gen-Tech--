@@ -277,7 +277,7 @@ export default function FunnelDiagnostic({
           </div>
           <div>
             <h4 className="font-sans text-[15px] font-bold text-[#0E0F11] leading-snug">{ctaStripText}</h4>
-            <p className="font-sans text-sm text-[#4B5563]">Book a free Revenue Leak Diagnostic — 1 of 3 May spots left.</p>
+            <p className="font-sans text-sm text-[#4B5563]">Book a free Revenue Leak Diagnostic — 1 of 3 June spots left.</p>
           </div>
         </div>
         
