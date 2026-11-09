@@ -9,7 +9,7 @@ export const HERO = {
   subhead: "Free 30-minute diagnostic. We map your funnel live with you, identify exactly where you're losing money, and send a written audit within 5 days. Pay nothing unless you want us to fix it.",
   primaryCta: { label: "Book the free diagnostic", href: "/book" },
   secondaryCta: { label: "See a sample audit", href: "#funnel-diagnostic" },
-  spotsBadge: "1 of 3 June spots left",
+  spotsBadge: "Limited monthly availability",
   trustLine: "Real audit. Real numbers. You walk away with actionable insight whether you hire us or not."
 };
 
@@ -22,7 +22,7 @@ export const PAIN_BEAT = {
 };
 
 export const ANNOUNCEMENT = {
-  text: "Booking the free Revenue Leak Diagnostic — 1 of 3 June spots left.",
+  text: "Booking the free Revenue Leak Diagnostic — limited monthly availability.",
   cta: { label: "Book now", href: "/book" }
 };
 
@@ -191,7 +191,7 @@ export const FAQ_CONTENT = {
     },
     {
       q: "What's the cost if I do hire you?",
-      a: "We quote against the cost of the leak. If your bottleneck is costing you $50k/mo, the fix is priced so the math always makes sense. No fixed packages, no retainers you don't need. [Floor price: see Open Decision #3 once set.]"
+      a: "We quote against the cost of the leak, so the scope and investment match the value of the problem being solved. No fixed packages and no retainers you don't need."
     },
     {
       q: "What if the leak isn't AI-shaped?",
@@ -212,7 +212,7 @@ export const FINAL_CTA = {
   ],
   body: "Thirty minutes. We map your funnel live. You walk away with a written audit in five days. Pay nothing unless you want us to fix it.",
   cta: { label: "Book the free diagnostic →", href: "/book" },
-  spotsBadge: "1 of 3 June spots left"
+  spotsBadge: "Limited monthly availability"
 };
 
 export const FOOTER = {
@@ -314,7 +314,7 @@ export const WEBSITES_OFFER: OfferContent = {
     body: "You're getting traffic but losing them before they book. We map the exact drop-off points.",
     primaryCta: { label: "Book the free diagnostic", href: "/book" },
     secondaryCta: { label: "See a sample audit", href: "#funnel-diagnostic" },
-    badge: "1 of 3 June spots left",
+    badge: "Limited monthly availability",
     trustLine: "Real audit. Real numbers. You walk away with actionable insight whether you hire us or not."
   },
   diagnosticData: [
@@ -346,7 +346,7 @@ export const AI_AGENTS_OFFER: OfferContent = {
     body: "Customer support shouldn't be a cost center. We build AI that resolves tickets, instantly.",
     primaryCta: { label: "Book the free diagnostic", href: "/book" },
     secondaryCta: { label: "See a sample audit", href: "#funnel-diagnostic" },
-    badge: "1 of 3 June spots left",
+    badge: "Limited monthly availability",
     trustLine: "Real audit. Real numbers. You walk away with actionable insight whether you hire us or not."
   },
   diagnosticData: [
@@ -379,7 +379,7 @@ export const SYSTEMS_OFFER: OfferContent = {
     body: "You're spending to acquire leads, but dropping the ball on follow-up. We fix the plumbing.",
     primaryCta: { label: "Book the free diagnostic", href: "/book" },
     secondaryCta: { label: "See a sample audit", href: "#funnel-diagnostic" },
-    badge: "1 of 3 June spots left",
+    badge: "Limited monthly availability",
     trustLine: "Real audit. Real numbers. You walk away with actionable insight whether you hire us or not."
   },
   diagnosticData: [

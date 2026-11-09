@@ -8,6 +8,8 @@ interface HeroContent {
   subhead?: string;
   primaryCta: { href: string; label?: string };
   secondaryCta: { href: string; label: string };
+  spotsBadge?: string;
+  badge?: string;
   trustLine: string;
 }
 
@@ -54,7 +56,7 @@ export default function Hero({ content = HERO }: { content?: HeroContent }) {
         </div>
 
         <div className="mt-8 flex flex-col items-center md:items-start">
-          <ScarcityCounter remaining={1} total={3} month="June" />
+          <ScarcityCounter label={content.spotsBadge ?? content.badge ?? 'Limited monthly availability'} />
           <p className="mt-3 text-[13px] text-gray-600 max-w-[520px] leading-relaxed">
             {content.trustLine}
           </p>
@@ -63,4 +65,3 @@ export default function Hero({ content = HERO }: { content?: HeroContent }) {
     </section>
   )
 }
-

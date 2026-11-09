@@ -101,10 +101,11 @@ interface ScarcityCounterProps {
   remaining?: number
   total?: number
   month?: string
+  label?: string
   style?: CSSProperties
 }
 
-export const ScarcityCounter = ({ remaining = 1, total = 3, month = 'May', style }: ScarcityCounterProps) => (
+export const ScarcityCounter = ({ remaining = 1, total = 3, month = 'May', label, style }: ScarcityCounterProps) => (
   <div style={{
     display: 'inline-flex', alignItems: 'center', gap: 10,
     ...style
@@ -114,7 +115,7 @@ export const ScarcityCounter = ({ remaining = 1, total = 3, month = 'May', style
       boxShadow: '0 0 0 4px rgba(47,168,92,0.18)'
     }} />
     <span style={{ fontFamily: 'var(--gt-font-body)', fontSize: 13, color: 'var(--gt-fg-3)', letterSpacing: '0.05em', textTransform: 'uppercase', fontWeight: 600 }}>
-      {remaining} OF {total} {month} SPOTS LEFT
+      {label ?? `${remaining} OF ${total} ${month} SPOTS LEFT`}
     </span>
   </div>
 )
