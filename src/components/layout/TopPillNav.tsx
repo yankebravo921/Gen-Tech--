@@ -29,9 +29,9 @@ export default function TopPillNav() {
             to="/" 
             className="flex items-center justify-center flex-shrink-0 w-[68px] h-[68px] ml-1 transition-transform hover:scale-105 active:scale-95" 
             onClick={() => setIsOpen(false)}
-            aria-label="Gentech Plus Home"
+            aria-label="GenteFlow Home"
           >
-            <Suspense fallback={<img src="/gentech-mark.svg" alt="Gentech Plus" className="h-12 w-auto" />}>
+            <Suspense fallback={<img src="/gentech-mark.svg" alt="GenteFlow" className="h-12 w-auto" />}>
               <MiniThreeDLogo size={68} isStatic />
             </Suspense>
           </Link>

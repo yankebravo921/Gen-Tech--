@@ -12,7 +12,7 @@ export default function Privacy() {
           <p className="text-sm text-[#52525B]">Last updated: June 2026</p>
           
           <p>
-            Gentech Plus respects your privacy. This Privacy Policy explains how we collect, use, and protect information when you visit our website, book a diagnostic call, or contact us.
+            GenteFlow respects your privacy. This Privacy Policy explains how we collect, use, and protect information when you visit our website, book a diagnostic call, or contact us.
           </p>
 
           <section className="space-y-4">
@@ -84,7 +84,7 @@ export default function Privacy() {
             <h2 className="font-serif text-2xl text-[#0E0F11]">10. Contact</h2>
             <p>For questions about this Privacy Policy, contact:</p>
             <p>
-              Gentech Plus<br />
+              GenteFlow<br />
               Email: <a href="mailto:hello@gentechplus.com" className="text-[#0E0F11] underline decoration-[#DCD9D2] hover:decoration-[#FF4D2E] underline-offset-4 transition-colors">hello@gentechplus.com</a>
             </p>
           </section>

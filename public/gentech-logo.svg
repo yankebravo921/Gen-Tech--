@@ -6,6 +6,5 @@
     <path d="M16 7 V25 M7 16 H25" stroke="#0E0F11" stroke-width="2.2" stroke-linecap="round"></path>
   </g>
   
-  <text x="42" y="27" font-family="Spectral, Georgia, serif" font-size="22" font-weight="400" fill="#0E0F11" letter-spacing="-0.3">Gen Tech</text>
-  <text x="166" y="27" font-family="Spectral, Georgia, serif" font-size="22" font-weight="400" fill="#2D6BF5" letter-spacing="-0.3">+</text>
+  <text x="42" y="27" font-family="Spectral, Georgia, serif" font-size="22" font-weight="400" fill="#0E0F11" letter-spacing="-0.3">GenteFlow</text>
 </svg>

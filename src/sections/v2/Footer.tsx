@@ -23,7 +23,7 @@ export default function Footer() {
             {/* Logo mark */}
             <div className="w-48 h-48 mb-2 flex items-center justify-center">
               <Suspense fallback={
-                <img src="/gentech-mark.svg" alt="Gentech Plus" className="h-24 w-auto brightness-0 invert" />
+                <img src="/gentech-mark.svg" alt="GenteFlow" className="h-24 w-auto brightness-0 invert" />
               }>
                 <MiniThreeDLogo size={180} />
               </Suspense>
@@ -65,7 +65,7 @@ export default function Footer() {
                   hello@gentechplus.com
                 </li>
                 <li className="font-sans text-sm text-[#D1D5DB]">
-                  Gentech Plus
+                  GenteFlow
                 </li>
               </ul>
               {/* Social links */}

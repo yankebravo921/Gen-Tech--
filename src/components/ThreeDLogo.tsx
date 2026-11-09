@@ -250,7 +250,7 @@ export default function ThreeDLogo() {
         <div className="w-full h-full relative">
             <ErrorBoundary fallback={
                 <div className="w-full h-full flex items-center justify-center">
-                    <img src="/logo.svg" alt="Gen Tech Plus" className="w-[60%] h-auto opacity-50" />
+                    <img src="/logo.svg" alt="GenteFlow" className="w-[60%] h-auto opacity-50" />
                 </div>
             }>
                 <Canvas

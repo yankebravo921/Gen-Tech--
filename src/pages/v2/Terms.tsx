@@ -12,12 +12,12 @@ export default function Terms() {
           <p className="text-sm text-[#52525B]">Last updated: June 2026</p>
           
           <p>
-            These Terms of Service govern your use of the Gentech Plus website and services. By using this website, booking a diagnostic call, or communicating with us, you agree to these terms.
+            These Terms of Service govern your use of the GenteFlow website and services. By using this website, booking a diagnostic call, or communicating with us, you agree to these terms.
           </p>
 
           <section className="space-y-4">
-            <h2 className="font-serif text-2xl text-[#0E0F11]">1. About Gentech Plus</h2>
-            <p>Gentech Plus is a diagnostic-first AI consulting business. We help operators identify revenue leaks across websites, customer support, lead handling, and business systems.</p>
+            <h2 className="font-serif text-2xl text-[#0E0F11]">1. About GenteFlow</h2>
+            <p>GenteFlow is a diagnostic-first AI consulting business. We help operators identify revenue leaks across websites, customer support, lead handling, and business systems.</p>
           </section>
 
           <section className="space-y-4">
@@ -48,7 +48,7 @@ export default function Terms() {
 
           <section className="space-y-4">
             <h2 className="font-serif text-2xl text-[#0E0F11]">7. Intellectual property</h2>
-            <p>All content on this website, including copy, design, structure, graphics, and branding, belongs to Gentech Plus unless otherwise stated. You may not copy, reproduce, or reuse our website content without permission.</p>
+            <p>All content on this website, including copy, design, structure, graphics, and branding, belongs to GenteFlow unless otherwise stated. You may not copy, reproduce, or reuse our website content without permission.</p>
           </section>
 
           <section className="space-y-4">
@@ -58,7 +58,7 @@ export default function Terms() {
 
           <section className="space-y-4">
             <h2 className="font-serif text-2xl text-[#0E0F11]">9. Limitation of liability</h2>
-            <p>To the maximum extent permitted by law, Gentech Plus is not liable for indirect, incidental, special, or consequential damages arising from your use of the website, diagnostic calls, recommendations, or services.</p>
+            <p>To the maximum extent permitted by law, GenteFlow is not liable for indirect, incidental, special, or consequential damages arising from your use of the website, diagnostic calls, recommendations, or services.</p>
           </section>
 
           <section className="space-y-4">
@@ -70,7 +70,7 @@ export default function Terms() {
             <h2 className="font-serif text-2xl text-[#0E0F11]">11. Contact</h2>
             <p>For questions about these Terms, contact:</p>
             <p>
-              Gentech Plus<br />
+              GenteFlow<br />
               Email: <a href="mailto:hello@gentechplus.com" className="text-[#0E0F11] underline decoration-[#DCD9D2] hover:decoration-[#FF4D2E] underline-offset-4 transition-colors">hello@gentechplus.com</a>
             </p>
           </section>

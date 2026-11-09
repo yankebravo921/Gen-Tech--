@@ -27,7 +27,7 @@ export const ANNOUNCEMENT = {
 };
 
 export const NAV = {
-  brand: "Gentech Plus",
+  brand: "GenteFlow",
   links: [
     { label: "UX & conversion", href: "/websites" },
     { label: "AI support", href: "/ai-agents" },
@@ -216,7 +216,7 @@ export const FINAL_CTA = {
 };
 
 export const FOOTER = {
-  brand: "Gentech Plus",
+  brand: "GenteFlow",
   tagline: "Diagnostic-first AI consulting. We find the leak. We plug it.",
   columns: [
     {
